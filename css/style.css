@@ -4,9 +4,107 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: #323232;
+    border: none;
 }
-p{
-    font-size: 20px;
+
+body{
+    background: linear-gradient(180deg, #0A0E34 0%, #3143E2 100%);
+    background-repeat: no-repeat;
+    height:100vh;
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+a, label{
+    font-size: .8rem;
+}
+a:hover{
+    color: #08558b;
+}
+/*container login*/
+
+#login-container {
+    background-color: #fff;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 30px;
+    margin-top: 10vh;
+    border-radius: 10px;
+    text-align: center;
+   }
+/*formulários de login*/
+
+.formloguin{
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+label, input {
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+label{
+    font-weight: bold;
+}
+input{
+    border-bottom: 2px solid #323232;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+input:focus{
+    border-bottom:2px solid #08558b;
+}
+#forgot-pass {
+    text-align: right;
+    display: block;
+}
+input[type="submit"] {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: 30px;
+    color: #fff;
+    background-color: #08558b;
+    cursor: pointer;
+}
+input[type="submit"]:hover{
+    background-color: #1b223c;
+    transition: .5s;
+}
+/*redessociais*/
+#social-container, #social-container p {
+    margin-bottom: 20px;
+    text-align: center;
+}
+#social-container i {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+    color: #fff;
+    margin: 5px;
+    cursor: pointer;
+    }
+
+.fa-facebook-f {
+    background-color: #3B5998;
+}
+.fa-google-plus {
+    background-color: #db4a39;
+}
+/*registrar*/
+#register-container p{
+    margin-bottom: 10px;
+}
+
+.box-noticias p{
+    font-size: 18px;
     padding: 10px;
     text-align: justify;
 }
@@ -24,8 +122,7 @@ header{
 .container-grid{
     width: 90%;
     margin: auto;
-   
-    }
+}
 
 .cabecalho{
     display: flex;
@@ -38,8 +135,8 @@ header{
     height: 30px;
     display: flex;
     justify-content:space-between;
-    
-}
+    }
+
 /* 
 #btn-mobile{
     display: none;
@@ -234,8 +331,10 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin: 10px;
 }
 .redessoc{
+    margin-bottom: 10px;
    display: flex;
    justify-content: space-between;
    }
@@ -247,14 +346,26 @@ footer{
 }
 .redessoc a{
     text-decoration: none;
-    
+
 }
 .direitos{
     font-size: 18px;
-     font-weight: bold;
+    font-weight: bold;
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
+}
+#campo-email{
+    border: solid 1px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0cm;
+    align-items: center;
+   }
+#btncadastro{
+    background-color: #0A0E34;
+    color: #fff;
+    display: grid;
 }
 @media screen and (max-width: 800px)
 {
